@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binar Car Rent</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css_sendiri.css" />
+  </head>
+  <body>
+    <div class="container-fluid mb-5" style="background-color: #f1f3ff">
+      <div class="container" style="margin-bottom: 100px">
+        <div class="row mb-md-5">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"
+              ><div
+                style="width: 100px; height: 34px; background-color: #0d28a6"
+              ></div
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-md-2 mb-lg-0">
+                <li class="nav-item mx-md-3">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#our_services"
+                    >Our Services</a
+                  >
+                </li>
+                <li class="nav-item mx-md-3">
+                  <a class="nav-link" href="#why_us">Why Us</a>
+                </li>
+                <li class="nav-item mx-md-3">
+                  <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item mx-md-3">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item ms-md-3">
+                  <button
+                    class="btn text-white fw-bold"
+                    style="background-color: #5cb85f"
+                  >
+                    Register
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+            <p>
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+          </div>
+          <div class="col-md-6 mt-xs-4">
+            <img
+              class="img-fluid mobil position-relative"
+              src="assets/img_car.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="sewa-mobil">
+      <div class="container-fluid">
+        <div class="container mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 rounded bg-body-secondary">
+              <form class="p-3" role="search" id="search-submit">
+                <div
+                  class="row align-items-end d-flex justify-content-around g-3"
+                >
+                  <div class="col-lg-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="tanggal" class="form-label">Tanggal</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <input id="tanggal" type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="waktu-jemput" class="form-label"
+                          >Waktu Jemput</label
+                        >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <select id="waktu-jemput" class="form-select">
+                          <option value="08:00">08:00 WIB</option>
+                          <option value="09:00">09:00 WIB</option>
+                          <option value="10:00">10:00 WIB</option>
+                          <option value="11:00">11:00 WIB</option>
+                          <option value="12:00">12:00 WIB</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="jumlah-penumpang" class="form-label"
+                          >Jumlah Penumpang (optional)</label
+                        >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <input
+                          type="number"
+                          name=""
+                          id="jumlah-penumpang"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto mt-4">
+                    <button
+                      class="btn text-white"
+                      type="submit"
+                      style="background-color: #5cb85f"
+                    >
+                      Cari Mobil
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid mb-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <div class="row mb-4">
+              <div class="col-lg-3" id="tempatFilter">
+                
+              </div>
+            </div>
+
+            <div class="row" id="car-rent">
+              <!-- tempat card mobil -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-md-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3 mx-2">
+            <div>
+              <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+              <p>binarcarrental@gmail.com</p>
+              <p>081-233-334-808</p>
+            </div>
+          </div>
+          <div class="col-md-2 mx-2">
+            <a
+              class="d-block text-decoration-none mb-2 fw-bold"
+              style="color: inherit"
+              href="#our_services"
+              >Our Services</a
+            >
+            <a
+              class="d-block text-decoration-none mb-2 fw-bold"
+              style="color: inherit"
+              href="#why_us"
+              >Why Us</a
+            >
+            <a
+              class="d-block text-decoration-none mb-2 fw-bold"
+              style="color: inherit"
+              href="#testimonial"
+              >Testimonial</a
+            >
+            <a
+              class="d-block text-decoration-none mb-2 fw-bold"
+              style="color: inherit"
+              href="#faq"
+              >FAQ</a
+            >
+          </div>
+          <div class="col-md-3 mx-2 connect_with_us">
+            <p class="mb-1">Connect with us</p>
+            <img class="mx-1" src="assets/icon_facebook.png" alt="" />
+            <img class="mx-1" src="assets/icon_instagram.png" alt="" />
+            <img class="mx-1" src="assets/icon_twitter.png" alt="" />
+            <img class="mx-1" src="assets/icon_mail.png" alt="" />
+            <img class="mx-1" src="assets/icon_twitch.png" alt="" />
+          </div>
+          <div class="col-md-2 mx-2">
+            <p>Copyright Binar 2022</p>
+            <div
+              style="width: 100px; height: 34px; background-color: #0d28a6"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/bootstrap.js"></script>
+    <script src="script/index.js" type="module"></script>
+  </body>
+</html>
